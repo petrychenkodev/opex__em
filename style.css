@@ -33,7 +33,7 @@ body{
 }
 .welcome__buttons{
 	display: grid;
-	grid-template-columns: 1fr 2px 1fr;
+	grid-template-columns: 1fr 1px 1fr;
 }
 .buttons__hello{
 	font-family: 'Roboto', sans-serif;
@@ -44,6 +44,7 @@ body{
 }
 .buttons__line{
 	background-color: grey;
+	opacity: 0.5;
 }
 .buttons__org{
 	font-family: 'Roboto', sans-serif;
@@ -92,7 +93,7 @@ body{
 }
 .aboutus__buttons{
 	display: grid;
-	grid-template-columns: 1fr 2px 1fr;
+	grid-template-columns: 1fr 1px 1fr;
 	grid-template-rows: 225px;
 }
 .aboutus__buttons__hello{
@@ -109,9 +110,13 @@ body{
 	color: #ffffff;
 	cursor: pointer;
 	text-align: center;
-	padding-left: 60px;
+	padding-left: 90px;
 	padding-top: 90px;
 	font-weight: bold;
+}
+.aboutus__buttons__org span{
+	display: inline-block;
+	margin-left: 20px;
 }
 .products{
 	position: relative;
@@ -166,6 +171,11 @@ body{
 	bottom: -230px;
 	left: 90px;
 }
+.halfphone{
+	position: absolute;
+	top: 100px;
+	right: 0px;
+}
 .partners{
 	background-color: #050505;
 }
@@ -198,4 +208,41 @@ body{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 150px;
+}
+.contacts{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 20px;
+}
+.contacts h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 34px;
+	font-weight: 900;
+	padding-left: 100px;
+}
+.contacts__founders{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	padding-left: 45px;
+	padding-top: 52px;
+}
+.contacts__maxim{
+	padding-top: 45px;
+}
+.footer{
+	background-color: #050505;
+	position: relative;
+	padding-bottom: 20px;
+}
+.footer img{
+	position: absolute;
+	top: 33px;
+	left: 100px;
+}
+.footer p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: right;
+	padding-top: 30px;
 }
