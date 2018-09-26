@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Email</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header class="container header">
+	<header id="header-top" class="container header">
 		<img class="logo" src="images/opex.png" alt="Opex">
 		<nav class="navigation">
 			<ul class="list">
@@ -22,76 +23,80 @@
 	</header>
 	<section class="welcome container">
 		<div class="welcome__buttons">
-			<p class="buttons__hello">Вас приветствует IT компания OPEX</p>
-			<div class="buttons__line"></div>
-			<p class="buttons__org">Организовать встречу <span><img src="images/arrowright.png" alt=">"></span></p>
+			<div class="buttons__li wow fadeInUp" data-wow-delay="0.5s"></div>
+			<p id="buttons-from-left" class="buttons__hello">Вас приветствует <br> IT компания OPEX</p>
+			<div id="buttons-from-up" class="buttons__line"></div>
+			<p id="buttons-from-right" class= "buttons__org">Организовать встречу <span><img src="images/arrowright.png" alt=">"></span></p>
+			<div class="buttons__li wow fadeInUp" data-wow-delay="0.5s"></div>
 		</div>
 		<video  width="600" height="340" poster="images/welcome.jpg"></video>
 	</section>
 	<section class="container weare">
 		<div class="weare__grid">
-			<img src="images/presentation.jpg" alt="presentation">
-			<div class="weare__grid__right">
+			<img class="wow fadeInDown" src="images/presentation.jpg" alt="presentation" data-wow-offset="200">
+			<div class="weare__grid__right wow fadeInDown" data-wow-offset="200" data-wow-delay="0.5s">
 				<p class="grid__right__num">01</p>
 				<p class="grid__right__text">OPEX - оптимизация <br> повседневных затрат компании <br> для ведения бизнеса, продуктов <br> и услуг. </p>
 			</div>
-			<div class="weare__grid__right">
+			<div class="weare__grid__right wow fadeInUp" data-wow-offset="200" data-wow-delay="0.5s">
 				<p class="grid__right__num">02</p>
 				<p class="grid__right__text">Опыт сотрудников<br> компании 10 лет в IT </p>
 			</div>
-			<img src="images/coding.jpg" alt="coding">
+			<img class="wow fadeInUp" data-wow-offset="200" src="images/coding.jpg" alt="coding">
 		</div>
 	</section>
 	<section class="aboutus container">
 		<div class="aboutus__buttons">
-			<p class="aboutus__buttons__hello ">Узнать больше о сотрудниках</p>
-			<div class="buttons__line"></div>
-			<p class="aboutus__buttons__org">Команда OPEX <span><img src="images/arrowright.png" alt=">"></span></p>
+			<div class="buttons__lin wow fadeInUp" data-wow-offset="200"></div>
+			<p class="aboutus__buttons__hello wow fadeInLeft" data-wow-offset="200">Узнать больше о сотрудниках</p>
+			<div class="buttons__lin wow fadeInUp" data-wow-offset="200"></div>
+			<p class="aboutus__buttons__org wow fadeInRight" data-wow-offset="200">Команда OPEX <span><img src="images/arrowright.png" alt=">"></span></p>
+			<div class="buttons__lin wow fadeInUp" data-wow-offset="200"></div>
 		</div>
 	</section>
 	<section class="container products">
-		<h3 class="products__header">Продукты компании:</h3>
+		<h3 class="products__header wow fadeInDown" data-wow-offset="200">Продукты компании:</h3>
 		<div class="products__grid">
-			<div class="products__grid__a">
+			<div class="products__grid__a wow fadeInLeft">
 				<p class="products__num">01</p>
 				<h4>STRATEGIC DEVELOPMENT</h4>
 				<p class="products__text">Стратегическая Разработка <br> WEB/IOS/Android</p>
 			</div>
-			<div class="products__grid__b">
+			<div class="products__grid__b wow fadeInRight">
 				<p class="products__num">02</p>
 				<h4>TRANSFORM YOUR BRAND</h4>
 				<p class="products__text">Трансформация бренда и <br> IT-структуры компании</p>
 			</div>
-			<div class="products__grid__c">
+			<div class="products__grid__c wow fadeInRight">
 				<p class="products__num">03</p>
 				<h4>CREATING INNOVATIVE <br> PRODUCTS</h4>
 				<p class="products__text">Создание инновационных <br> продуктов</p>
 			</div>
 		</div>
-		<img class="phone" src="images/phone.png" alt="phone">
-		<img class="halfphone" src="images/halfphone.png" alt="phone">
+		<img class="phone wow fadeInUp" data-wow-offset="200" src="images/phone.png" alt="phone">
+		<img class="halfphone wow fadeInRight" data-wow-offset="200" src="images/halfphone.png" alt="phone">
 	</section>
 	<section class="container partners">
-			<p class="partners__clients">Клиенты и партнёры</p>
-			<p class="partners__location">Локация OPEX</p>
+			<p class="partners__clients wow fadeInLeft" data-wow-offset="200">Клиенты и партнёры</p>
+			<p class="partners__location wow fadeInRight" data-wow-offset="200">Локация OPEX</p>
 			<div class="partners__grid">
-				<img src="images/avd.png" alt="">
-				<img src="images/factura.png" alt="">
-				<img src="images/glorum.png" alt="">
-				<img src="images/powerpro.png" alt="">
-				<img src="images/natalia.png" alt="">
-				<img class="location__img" src="images/unit.png" alt="">
+				<img src="images/avd.png" alt="" class="wow fadeInUp" data-wow-offset="200">
+				<img src="images/factura.png" alt="" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.2s">
+				<img src="images/glorum.png" alt="" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.4s">
+				<img src="images/powerpro.png" alt="" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.6s">
+				<img src="images/natalia.png" alt="" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.8s">
+				<img class="location__img wow fadeInUp" src="images/unit.png" alt="" data-wow-offset="200" data-wow-delay="1s">
 			</div>
 	</section>
 	<section class="photo">
-		<img src="images/jurdana.jpg" alt="jurdana">
-		<img src="images/glorum.jpg" alt="glorum">
-		<img src="images/cherdak.jpg" alt="cherdak">
-		<img src="images/algo.jpg" alt="algo">
+		<img src="images/jurdana.jpg" alt="jurdana" class="wow fadeInUp" data-wow-offset="200">
+		<img src="images/glorum.jpg" alt="glorum" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.2s">
+		<img src="images/cherdak.jpg" alt="cherdak" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.4s">
+		<img src="images/algo.jpg" alt="algo" class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.6s">
 	</section>
 	<section class="container contacts">
-		<h3>We know <br>how it was <br>&<br>we know <br> how it’ll be…</h3>
-		<div class="contacts__founders">
+		<h3 class="wow fadeInLeft" data-wow-offset="200">We know <br>how it was <br>&<br>we know <br> how it’ll be…</h3>
+		<div class="contacts__founders wow fadeInRight" data-wow-offset="200">
 			<div class="contacts__taras">
 				<b>Taras Antonov</b> <br>
 				Founder <br>
@@ -112,4 +117,11 @@
 			<p>Хотите отписаться?</p>
 		</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+	<script src="animation.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="wow.min.js"></script>
+	<script>new WOW().init();</script>
 </body>

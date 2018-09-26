@@ -9,6 +9,7 @@ body{
 .header{
 	padding-top: 15px;
 	padding-bottom: 15px;
+	opacity: 0;
 }
 .navigation, .list__item{
 	display: inline-block;
@@ -30,10 +31,11 @@ body{
 }
 .welcome{
 	background-color: #050505;
+	overflow: hidden;
 }
 .welcome__buttons{
 	display: grid;
-	grid-template-columns: 1fr 1px 1fr;
+	grid-template-columns: 1px 1fr 1px 1fr 1px;
 }
 .buttons__hello{
 	font-family: 'Roboto', sans-serif;
@@ -41,8 +43,18 @@ body{
 	color: #ffffff;
 	cursor: pointer;
 	font-weight: bold;
+	opacity: 0;
+	padding-left: 48px;
 }
 .buttons__line{
+	background-color: grey;
+	opacity: 0;
+}
+.buttons__li{
+	background-color: grey;
+	opacity: 0.5;
+}
+.buttons__lin{
 	background-color: grey;
 	opacity: 0.5;
 }
@@ -52,9 +64,10 @@ body{
 	color: #ffffff;
 	cursor: pointer;
 	text-align: center;
-	padding-left: 60px;
+	padding-left: 15px;
 	padding-top: 28px;
 	font-weight: bold;
+	opacity: 0;
 }
 .buttons__org span{
 	display: inline-block;
@@ -63,6 +76,7 @@ body{
 .weare{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	overflow: hidden;
 }
 .weare__grid{
 	display: grid;
@@ -90,10 +104,11 @@ body{
 }
 .aboutus{
 	background-color: #050505;
+	overflow: hidden;
 }
 .aboutus__buttons{
 	display: grid;
-	grid-template-columns: 1fr 1px 1fr;
+	grid-template-columns: 1px 1fr 1px 1fr 1px;
 	grid-template-rows: 225px;
 }
 .aboutus__buttons__hello{
@@ -103,6 +118,7 @@ body{
 	cursor: pointer;
 	font-weight: bold;
 	padding-top: 60px;
+	padding-left: 47px;
 }
 .aboutus__buttons__org{
 	font-family: 'Roboto', sans-serif;
@@ -110,7 +126,7 @@ body{
 	color: #ffffff;
 	cursor: pointer;
 	text-align: center;
-	padding-left: 90px;
+	padding-left: 20px;
 	padding-top: 90px;
 	font-weight: bold;
 }
@@ -208,11 +224,13 @@ body{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 150px;
+	overflow: hidden;
 }
 .contacts{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-top: 20px;
+	overflow: hidden;
 }
 .contacts h3{
 	font-family: 'Roboto', sans-serif;
